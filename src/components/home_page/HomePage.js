@@ -14,7 +14,7 @@ export default function HomePage() {
 <QuestionsAccordion />
 </div>
 
-<div style={{paddingTop:'5rem'}}>
+<div style={{paddingTop:'7rem'}}>
 <Bottom1 />
 </div>
 </div>
