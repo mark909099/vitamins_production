@@ -13,7 +13,10 @@ export default function HomePage() {
 <Header />
 <QuestionsAccordion />
 </div>
+
+<div style={{paddingTop:'5rem'}}>
 <Bottom1 />
+</div>
 </div>
 
     )
