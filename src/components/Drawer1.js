@@ -6,11 +6,17 @@ import {
     ListItem,
     Button,
     Drawer,
+    Paper
      } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
+    paper: {
+        background:'#3f51b5'
+    },
     btn: {
-        paddingBottom:'1rem',
+        paddingBottom:'1.2rem',
+        fontSize:'1.2rem',
+        color:'white'
     },
     list_vitamins: {
         [theme.breakpoints.up('xs')]: {
@@ -40,15 +46,15 @@ const toggleDrawer = (open) => () => {
 };
 
     return (
-        <div className={classes.list}>
+        <div>
         <Button className={classes.list_vitamins} onClick={toggleDrawer(true)}>List of vitamins</Button>
+        <Paper>
         <Drawer
+        classes={{ paper: classes.paper }}
+        transitionDuration={1500}
         anchor={'top'}
         open={state}
         onClose={toggleDrawer(false)}
-        classes={{
-            paper: classes.drawerPaper,
-          }}
         >
         <List>
         <ListItem><Button className={classes.btn} fullWidth='true' onClick={toggleDrawer(false)}><ArrowUpwardIcon/></Button></ListItem>
@@ -69,6 +75,7 @@ const toggleDrawer = (open) => () => {
         <ListItem></ListItem>
         </List>
         </Drawer>
+        </Paper>
         
         
         

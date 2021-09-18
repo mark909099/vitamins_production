@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tab: {
       [theme.breakpoints.up('xs')]: {
-        fontSize:'1.25rem',   
+        fontSize:'1rem',   
       },
       [theme.breakpoints.up('md')]: {
         fontSize:'1.75rem',   
